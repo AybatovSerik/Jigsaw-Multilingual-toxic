@@ -2,7 +2,7 @@ from scipy.spatial.distance import cosine, minkowski
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from tqdm import tqdm
 
-def nearest_neighbour_glove(vec, words_exception=[], number_of_neighbour=5, glove_dict = glove_twitter_dict, method='cosine'):
+def nearest_neighbour_glove(vec, glove_dict = ,words_exception=[], number_of_neighbour=5,  method='cosine'):
     distances = []
     if method=='cosine':
         distance_func = cosine
